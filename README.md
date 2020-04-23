@@ -6,8 +6,11 @@ Conversion / learning experience from https://bisqwit.iki.fi/story/howto/dither/
 # API
 Currently, Color spaces are separated and you can convert between them. The idea is to create the colorspace you want to store your colors in. E.g.
 
+```
+#include "color.hh"
 Color<colorspace::RGB> red{255,0,0};
 Color<colorspace::LAB> lab_red{red};
+```
 
 # Compiling
 Requires g++, type make test to build the tests. or make demo for the demo application.
